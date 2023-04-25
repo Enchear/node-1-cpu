@@ -1,0 +1,16 @@
+{
+  "name": "1-cpu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "loadtest": "autocannon -c 15000 -d 30  -w 50 --renderStatuscodes -W [-c 1 -d 3] localhost:8000"
+  },
+  "keywords": [],
+  "author": "Raniery da Silva Miguel",
+  "license": "ISC",
+  "devDependencies": {
+    "autocannon": "^7.10.0"
+  }
+}
